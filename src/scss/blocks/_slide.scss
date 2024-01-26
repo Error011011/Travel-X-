@@ -1,0 +1,114 @@
+
+:root {
+    --radial-bg: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.20) 100%);
+    --linear-bg: linear-gradient(181deg, rgba(0, 0, 0, 0.20) 0.91%, rgba(255, 255, 255, 0.00) 116.71%, rgba(255, 255, 255, 0.00) 116.72%);
+}
+
+.slide {
+    height: 100svh;
+    overflow: hidden;
+    padding-bottom: 80px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    // background-image: url('../img/bg/01.jpg');
+    // background-position: center center;
+    background-repeat: no-repeat;
+	background-size: cover !important;
+   
+    background: 
+    var(--radial-bg),
+    var(--linear-bg);
+    // url('../img/bg/01.jpg') 
+
+
+    &--norway {
+        background-image: url('../img/bg/01.jpg');
+    }
+
+    &--austria {
+        background-image: url('../img/bg/02.jpg');
+    }
+
+    &--uae {
+        background-image: url('../img/bg/03.jpg');
+    }
+
+    &--thailand {
+        background-image: url('../img/bg/04.jpg');
+    }
+
+    &--morocco {
+        background-image: url('../img/bg/05.jpg');
+    }
+
+    &::before {
+        content: '';
+    }
+
+    cursor: grab;
+
+    &:hover {
+        cursor: grabbing;
+    }
+
+
+    @media (max-width: 1200px) {
+        padding-top: 100px;
+        padding-bottom: 40px;
+        
+    }
+    
+    @media (max-width: 767px) {
+        top: 30px;
+        left: 5%;
+        right: 5%;
+        bottom: 30px;
+    }
+}
+.slide__header {
+    text-align: center;
+}
+.slide__tagline {
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 1.56vw;
+    font-weight: 500;
+    letter-spacing: 16.5px;
+
+    @media (max-width: 767px) {
+        font-size: 3vw;
+    }
+}
+.slide__title {
+    font-size: 13vw;
+    font-weight: 700;
+
+    @media (max-width: 767px) {
+        font-size: 18vw;
+    }
+
+}
+
+
+.slide__locations {
+
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    width: 70%;
+    margin: 0 auto;
+
+    @media (max-width: 1023px) {
+        width: 90%;
+    }
+
+    @media (max-width: 767px) {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+}
+

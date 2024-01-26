@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>TravelX</title>
+		<link rel="stylesheet" href="./css/main.css" />
+	</head>
+	<body>
+
+		@@include('blocks/loader.html')
+		
+		<header class="header">
+			<!-- Swiper -->
+			@@include('blocks/swiper.html')
+			<!-- Slider content -->
+
+
+			<div class="header__slide none">
+				@@include('blocks/slide.html')
+			</div>
+
+			<!-- header content  -->
+			<div class="header__content">
+				
+				<!-- HEADER NAV -->
+				<div class="header__nav">
+					<nav class="nav">
+
+						<!-- LOGO -->
+						<a href="#!" class="nav__logo">
+							<img src="./img/icons/logo.svg" alt="" class="logo">
+						</a>
+
+						<!-- NAV LINKS -->
+						<div class="nav__list">
+							<ul>
+								<li><a href="#!" class="nav__link">Destinations</a></li>
+								<li><a href="#!" class="nav__link">Activities</a></li>
+								<li><a href="#!" class="nav__link">About Us</a></li>
+								<li><a href="#!" class="nav__link">Contact</a></li>
+							</ul>
+						</div>
+
+						<!-- NAV BUTTON -->
+						<div class="nav__mobile-nav">
+							<button class="nav-btn" id="modalOpen">
+								<svg xmlns="http://www.w3.org/2000/svg" width="35" height="23" viewBox="0 0 35 23" fill="none">
+									<rect x="-0.00012207" width="35" height="3.22581" rx="1.42857" fill="#FAFAFA"/>
+									<rect x="3.38708" y="9.67749" width="31.6129" height="3.22581" rx="1.42857" fill="#FAFAFA"/>
+									<rect x="6.36346" y="19.3547" width="28.6364" height="3.22581" rx="1.42857" fill="#FAFAFA"/>
+									</svg>
+							</button>	
+						</div>
+
+					</nav>
+
+				</div>
+
+				<!--  SOCIALS -->
+				<div class="header__socials">
+					<a href="#!"><img src="./img/socials/facebook-min.svg" alt=""></a>
+					<a href="#!"><img src="./img/socials/twitter-min.svg" alt=""></a>
+					<a href="#!"><img src="./img/socials/instagram-min.svg" alt=""></a>
+				</div>
+
+				<!-- SEE MORE -->
+				<div class="header__seemore">
+					<a href="#!" class="see-more">SEE MORE</a>
+				</div>
+
+				<!-- CONTROL -->
+				<div class="header__slider-controls">
+					<div class="slider-controls">
+						<div class="slider-controls__arrows">
+							<button id="slider-prev"><img src="./img/icons/left-min.svg" alt=""></button>
+							<button id="slider-next"><img src="./img/icons/right-min.svg" alt=""></button>
+						</div>
+						<div class="slider-controls__count">
+							<!-- <span class="slider-controls__count-current">01</span>
+							/
+							<span class="slider-controls__count-total">04</span> -->
+						</div>
+					</div>
+				</div>
+				<!-- SCROLL -->
+				<div class="header__slider-scrollbar">
+					<div class="swiper-scrollbar"></div>
+				</div>
+			</div>
+
+
+			@@include('blocks/mobile-nav.html')
+
+		</header>
+		<script src="./js/index.bundle.js"></script>
+	</body>
+</html>
+
+
+<!-- font-family: 'Roboto', sans-serif; -->
+<!-- font-family: 'Montserrat', sans-serif; -->
